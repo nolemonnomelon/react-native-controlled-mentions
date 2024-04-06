@@ -22,7 +22,7 @@
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dabakovich/react-native-controlled-mentions.git"
+    "url": "git+https://github.com/nolemonnomelon/react-native-controlled-mentions.git"
   },
   "author": "David Tabaka <dabakovich@gmail.com>",
   "license": "MIT",
