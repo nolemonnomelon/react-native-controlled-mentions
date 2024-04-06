@@ -67,6 +67,7 @@ type TriggerConfigBase = {
 
   // Custom mention styles in text input
   textStyle?: StyleProp<TextStyle>;
+  textStyleFunc?: (data: TriggerData) => StyleProp<TextStyle>;
 
   // Plain string generator for mention
   getPlainString?: (mention: TriggerData) => string;
@@ -89,6 +90,7 @@ type PatternConfig = {
   pattern: RegExp;
 
   textStyle?: StyleProp<TextStyle>;
+  textStyleFunc?: (data: TriggerData) => StyleProp<TextStyle>;
 };
 
 type Config = TriggerConfig | PatternConfig;

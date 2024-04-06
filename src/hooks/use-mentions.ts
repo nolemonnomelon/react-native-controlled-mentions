@@ -92,7 +92,11 @@ const useMentions = <TriggerName extends string>({
               Text,
               {
                 key: `${index}-${data?.trigger ?? 'pattern'}`,
-                style: config.textStyle ?? defaultTriggerTextStyle,
+                style: [
+                  defaultTriggerTextStyle, 
+                  config.textStyle, 
+                  config.textStyleFunc && data && config.textStyleFunc(data)
+                ].filter(x => x)
               },
               text,
             )
